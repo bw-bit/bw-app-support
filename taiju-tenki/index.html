@@ -3,37 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>サポート｜体重てんき</title>
+<title>体重てんき｜明日の体重予報アプリ サポート</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;max-width:760px;margin:0 auto;padding:32px 16px 48px;color:#1c2536;background:#f7f9fc;line-height:1.85}
-h1{font-size:22px;border-bottom:2px solid #5b9bd5;padding-bottom:8px}
-h2{font-size:17px;margin-top:32px;color:#2f5f93}
-p,li{font-size:15px}
-a{color:#145db2}
-footer{margin-top:40px;font-size:13px;color:#667}
+:root{--navy:#13294b;--sky:#e7f1fb;--sun:#f2b84b;--ink:#1d2433;--sub:#5a6577;--line:#cfdbe8}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;color:var(--ink);background:#fff;line-height:1.8}
+header{background:var(--navy);color:#fff;padding:28px 16px 22px}
+header .wrap,main{max-width:820px;margin:0 auto}
+header p{margin:0;font-size:13px;letter-spacing:.12em;color:#b9cbe4}
+header h1{margin:6px 0 4px;font-size:26px}
+header .lead{font-size:15px;color:#e5edf8;letter-spacing:0}
+main{padding:8px 16px 48px}
+section{margin-top:30px}
+h2{font-size:17px;border-left:6px solid var(--sun);padding-left:10px;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--sky);width:30%;font-weight:700}
+details{border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin:8px 0;background:#fbfdff}
+summary{cursor:pointer;font-weight:700}
+.note{background:#fff7e6;border:1px solid #f4d9a3;padding:12px 14px;border-radius:6px;font-size:14px}
+.contact{background:var(--sky);padding:14px;border-radius:6px}
+a{color:#1756a8}
+footer{max-width:820px;margin:0 auto;padding:0 16px 32px;font-size:12px;color:var(--sub)}
 </style>
 </head>
 <body>
+<header><div class="wrap">
+<p>WEIGHT FORECAST / SUPPORT</p>
+<h1>体重てんき</h1>
+<div class="lead">記録から「明日の体重」と「この先7日間」を予報するアプリのサポート窓口です。</div>
+</div></header>
 <main>
-<h1>体重てんき サポート</h1>
-<p>「体重てんき」は、体重の記録と最近の傾向を、天気予報のように表示するアプリです。会員登録は不要で、記録は端末内に保存します。</p>
-
+<section>
+<h2>予報の見方</h2>
+<table>
+<tr><th>明日の体重予報</th><td>直近14日の記録から傾向を計算した、明日の体重の目安です。数値と「予報の幅」で表示します。</td></tr>
+<tr><th>この先7日間</th><td>1日ごとの予報を天気のマークで並べます。目標の方向に進んでいれば晴れ、横ばいはくもり、逆向きは雨です。</td></tr>
+<tr><th>観測中</th><td>日付の違う記録が4日分（最初と最後が5日以上離れている）そろうまでは予報を出さず、「観測中」と表示します。</td></tr>
+<tr><th>前線</th><td>外食が続く曜日など、記録に表れた傾向を「外食前線」などとしてお知らせします。</td></tr>
+</table>
+</section>
+<section>
 <h2>よくある質問</h2>
-<p><strong>Q. 予報が表示されません。</strong><br>記録が少ない間は「観測中」と表示します。日付の異なる記録が4日分以上、5日以上の期間にわたってそろうと、予報を表示します。記録画面で過去の日付も選べます。</p>
-<p><strong>Q. 機種変更で記録を引き継げますか。</strong><br>記録はバックアップの対象から外しているため、新しい端末へは引き継がれません。アプリを削除した場合も記録は消えます。</p>
-<p><strong>Q. 記録をすべて消したい。</strong><br>アプリの「設定」にある「全データを削除」から消去できます。</p>
-<p><strong>Q. 通知を止めたい。</strong><br>アプリの「設定」でリマインダーをオフにするか、端末の設定から通知を止めてください。</p>
-<p><strong>Q. 共有画像に体重の数字は入りますか。</strong><br>初期設定では数字を表示しません。表示するかどうかは設定で選べます。</p>
-
-<h2>健康に関する注意</h2>
-<p>予報は過去の記録から計算した目安で、将来の体重を保証するものではありません。本アプリは医療機器ではなく、診断・治療・予防を目的としていません。体調や体重について気になることがある場合は、医師などの専門家にご相談ください。</p>
-
+<details><summary>予報が出ません</summary><p>日付の違う記録が4日分必要です。記録画面の「前の日」で過去の日付も入力できます。</p></details>
+<details><summary>機種変更で記録を引き継げますか</summary><p>記録は端末の中だけに保存し、バックアップの対象外です。機種変更の前に、設定の「記録をCSVで書き出す」で保存してください。</p></details>
+<details><summary>記録をすべて消したい</summary><p>設定の「すべてのデータを削除」から消去できます。</p></details>
+<details><summary>通知を止めたい</summary><p>設定で毎朝の通知をオフにするか、端末の設定から通知を止めてください。</p></details>
+</section>
+<section>
+<h2>ご注意</h2>
+<div class="note">予報は過去の記録から計算した目安で、将来の体重を保証するものではありません。本アプリは医療機器ではなく、診断・治療・予防を目的としていません。体調や体重について気になることがある場合は、医師などの専門家にご相談ください。</div>
+</section>
+<section>
 <h2>お問い合わせ</h2>
-<p>運営者：BORDERLESS WORLD LLC<br>メール：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p>
-<p>お問い合わせの際は、ご利用の端末（iPhone／Android）とOSのバージョンをお書き添えください。</p>
+<div class="contact">BORDERLESS WORLD LLC<br>メール：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a><br>ご利用の端末（iPhone／Android）とOSのバージョンをお書き添えください。</div>
 <p><a href="privacy-policy.html">プライバシーポリシー</a></p>
-
-<footer>BORDERLESS WORLD LLC</footer>
+</section>
 </main>
+<footer>© 2026 BORDERLESS WORLD LLC</footer>
 </body>
 </html>
