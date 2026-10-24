@@ -23,3 +23,4 @@ table{width:100%;border-collapse:collapse;font-size:.93rem}
 th,td{border-bottom:1px solid #24496A;padding:10px 8px;text-align:left;vertical-align:top}
 th{color:var(--teal);width:32%}
 footer{max-width:860px;margin:0 auto;padding:0 20px 40px;color:var(--sub);font-size:.85rem}
+@media (max-width:560px){th,td{display:block;width:auto;border-bottom:none;padding:6px 4px}tr{display:block;border-bottom:1px solid #24496A;padding:6px 0}}
