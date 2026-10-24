@@ -5,7 +5,8 @@ a{color:var(--teal)}
 header{background:linear-gradient(180deg,#0B1B2A 0%,var(--deep) 100%);padding:40px 20px 28px;border-bottom:1px solid #24496A}
 header .in,main{max-width:860px;margin:0 auto}
 header p.kicker{margin:0;color:var(--teal);letter-spacing:.2em;font-size:.8rem}
-header h1{margin:.3em 0 .2em;font-size:1.9rem}
+header h1{margin:.3em 0 .2em;font-size:clamp(1.45rem,6.4vw,1.9rem);line-height:1.5}
+.nw{white-space:nowrap}
 header p.lead{margin:0;color:var(--sub)}
 nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px;font-size:.92rem}
 main{padding:24px 20px 56px}
