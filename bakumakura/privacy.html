@@ -1,58 +1,57 @@
 <!doctype html>
-<html lang="ja">
-<head>
+<html lang="ja"><head><title>プライバシーポリシー｜ばくまくら</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー｜ばくまくら</title>
+<link rel="icon" href="img/icon.png">
 <style>
-:root{--bg:#141632;--card:#1F2247;--ink:#F6EEDB;--sub:#B9B4D8;--amber:#F2B45A;--line:#3A3F74}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.85}
-main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.15rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:4px}
-a{color:var(--amber)}.sub{color:var(--sub)}ul{padding-left:1.4em}
-nav{margin-bottom:24px;display:flex;flex-wrap:wrap;gap:8px 16px}
-.card{background:var(--card);border-radius:16px;padding:16px 20px;margin:16px 0}
-</style>
-</head>
-<body><main>
-<nav><a href="./">ばくまくら サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
-<h1>ばくまくら プライバシーポリシー</h1>
-<p class="sub">制定日：2026年10月22日</p>
-<p>BORDERLESS WORLD LLC（以下「運営者」）は、スマートフォンアプリ「ばくまくら」（以下「本アプリ」）における利用者の情報の取り扱いを次のとおり定めます。</p>
-
-<h2>1. 運営者が取得する情報</h2>
-<p>運営者は、本アプリを通じて利用者の個人情報を取得・収集しません。本アプリにはアカウント登録、運営者のサーバーへの送信、広告、利用状況の解析ツール（アクセス解析SDK等）はありません。</p>
-
-<h2>2. 端末内に保存する情報</h2>
-<p>本アプリの機能のため、次の情報を利用者の端末内（アプリの保存領域）にのみ保存します。これらは運営者や第三者に送信されません。</p>
-<ul>
-<li>睡眠日誌（布団に入った時刻・寝つくまでの時間・夜中に目が覚めた回数と時間・目が覚めた時刻・布団から出た時刻・起きたときの気分・前日の過ごし方のタグ）</li>
-<li>はじめの確認（いびき・日中の居眠り・通院の有無など7項目への「あてはまる／あてはまらない」）とセルフチェックの回答・結果</li>
-<li>起きたい時刻・おやすみ準備の時刻・お知らせの設定</li>
-<li>おやすみ準備を行った日、夢のしずく・夢カード・読んだまめ知識・着せ替えの選択</li>
-<li>ばくまくら プラスの購入状態（表示のための記録）</li>
-</ul>
-<p>おやすみ準備で書いた「もやもや」の文章は、端末にも保存されず、その場で消えます。</p>
-<p>端末内の情報は、本アプリの「設定」＞「すべてのデータを消す」、または本アプリの削除で消去できます。「日誌をテキストで書き出す」を使った場合は、利用者が選んだ共有先（メモ、メール等）に利用者の操作で送られます。</p>
-
-<h2>3. 通知</h2>
-<p>本アプリは、利用者が許可した場合に、おやすみ準備と朝の日誌のお知らせを端末内で予約するローカル通知を使います。通知のために情報を外部へ送ることはありません。</p>
-
-<h2>4. アプリ内課金</h2>
-<p>「ばくまくら プラス」の購入・無料体験・解約・返金は、Apple（App Store）またはGoogle（Google Play）が処理します。お支払い情報は各ストアが管理し、運営者は受け取りません。本アプリは、各ストアの仕組みを使って端末上で購入状態を確認するだけです。各ストアでの情報の取り扱いは、それぞれのプライバシーポリシーをご確認ください。</p>
-
-<h2>5. 第三者への提供</h2>
-<p>運営者は利用者の情報を取得しないため、第三者へ提供することはありません。</p>
-
-<h2>6. 子どもの利用</h2>
+:root{--night:#0f1130;--deep:#171a3d;--card:#21255080;--ink:#f6eedb;--sub:#bdb7dc;--amber:#f2b45a;--line:#3a3f74}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--ink);font-family:"Hiragino Maru Gothic ProN","Zen Maru Gothic","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.9;font-size:16px}
+a{color:var(--amber)}
+.hero{position:relative;min-height:340px;background:url(img/garden.jpg) center bottom/cover;display:flex;align-items:flex-end;justify-content:center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,48,.15),rgba(15,17,48,.95))}
+.hero .in{position:relative;z-index:1;text-align:center;padding:0 16px 28px;max-width:640px}
+.hero img.m{width:150px;display:block;margin:0 auto -6px}
+.hero h1{margin:6px 0 2px;font-size:2rem;letter-spacing:.08em}
+.hero p{margin:0;color:var(--sub)}
+.wrap{max-width:680px;margin:0 auto;padding:8px 16px 56px}
+.tabs{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:18px 0 8px}
+.tabs a{padding:6px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-size:.9rem}
+.tabs a.on{background:var(--amber);color:#2b1d06;border-color:var(--amber)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+.step{background:var(--deep);border-radius:18px;padding:12px;text-align:center}
+.step img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.step b{display:block;color:var(--amber);font-size:.8rem;letter-spacing:.1em}
+.step span{font-size:.92rem}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.step{display:grid;grid-template-columns:96px 1fr;gap:12px;text-align:left;align-items:center}}
+details{background:var(--deep);border-radius:14px;padding:12px 16px;margin:10px 0}
+summary{cursor:pointer;font-weight:bold}
+.note{border-left:3px solid var(--amber);padding:6px 14px;color:var(--sub);margin:24px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--amber);font-weight:bold;width:32%}
+h2{font-size:1.15rem;margin:34px 0 6px;color:var(--amber)}
+footer{text-align:center;color:var(--sub);font-size:.85rem;margin-top:40px}
+</style></head>
+<body>
+<header class="hero" style="min-height:220px"><div class="in"><h1 style="font-size:1.5rem">プライバシーポリシー</h1><p>ばくまくら（制定 2026年10月22日・改定 2026年10月26日）</p></div></header>
+<div class="wrap">
+<nav class="tabs"><a href="./">サポート</a><a href="privacy.html" class="on">プライバシー</a><a href="terms.html">利用規約</a></nav>
+<p>BORDERLESS WORLD LLC（以下「運営者」）が提供するアプリ「ばくまくら」（以下「本アプリ」）での情報の取り扱いを、次の表にまとめます。</p>
+<table>
+<tr><th>運営者が受け取る情報</th><td>ありません。アカウント登録、運営者のサーバーへの送信、広告、利用状況の解析ツールはありません。第三者への提供もありません。</td></tr>
+<tr><th>端末の中だけに保存する情報</th><td>睡眠日誌（布団に入った時刻・寝つくまで・夜中に起きた回数と時間・目が覚めた時刻・布団から出た時刻・気分・前日の過ごし方）、はじめの確認とセルフチェックの回答、時刻・お知らせ・音の設定、おやすみ準備をした日、夢のしずく・夢カード・読んだまめ知識</td></tr>
+<tr><th>保存しない情報</th><td>おやすみ準備で書いた「もやもや」の文章（むにゃが食べたら、その場で消えます）</td></tr>
+<tr><th>端末の外に出るとき</th><td>「日誌をテキストで書き出す」を使い、利用者が選んだ共有先（メモ・メール等）へ送るときだけです。</td></tr>
+<tr><th>お知らせ</th><td>利用者が許可した場合に、端末内で予約するローカル通知だけを使います。</td></tr>
+<tr><th>音</th><td>むにゃの声とBGMはアプリに同梱した音声ファイルです。マイクは使いません。</td></tr>
+<tr><th>消すには</th><td>「設定 ＞ すべてのデータを消す」、または本アプリの削除</td></tr>
+</table>
+<h2>アプリ内課金について</h2>
+<p>現在のバージョンにアプリ内課金はありません。将来「ばくまくら プラス」を提供する場合も、購入・解約・返金は Apple（App Store）または Google（Google Play）が処理し、運営者はお支払い情報を受け取りません。</p>
+<h2>子どもの利用</h2>
 <p>本アプリは子どもから意図的に情報を集めることはありません。18歳未満の方には「ねどこ時間のめやす」を表示しません。</p>
-
-<h2>7. 医療に関する注意</h2>
-<p>本アプリは毎日の睡眠習慣をととのえるためのセルフケアアプリで、医療機器ではありません。病気の診断・治療・予防を目的としたものではありません。</p>
-
-<h2>8. 改定</h2>
-<p>本ポリシーを改定する場合は、このページで改定日とともにお知らせします。</p>
-
-<h2>9. お問い合わせ</h2>
-<p>BORDERLESS WORLD LLC<br>メール：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p>
-</main></body></html>
+<h2>改定とお問い合わせ</h2>
+<p>改定する場合は、このページで改定日とともにお知らせします。お問い合わせ：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p>
+<footer><img src="img/munya-sleep.png" alt="" width="90"><br>BORDERLESS WORLD LLC ・ <a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></footer>
+</div></body></html>

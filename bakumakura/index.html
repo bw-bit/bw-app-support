@@ -1,35 +1,57 @@
 <!doctype html>
-<html lang="ja">
-<head>
+<html lang="ja"><head><title>ばくまくら｜もやもやは、獏のむにゃが食べる</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ばくまくら サポート</title>
+<link rel="icon" href="img/icon.png">
 <style>
-:root{--bg:#141632;--card:#1F2247;--ink:#F6EEDB;--sub:#B9B4D8;--amber:#F2B45A;--line:#3A3F74}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.85}
-main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.15rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:4px}
-a{color:var(--amber)}.sub{color:var(--sub)}ul{padding-left:1.4em}
-nav{margin-bottom:24px;display:flex;flex-wrap:wrap;gap:8px 16px}
-.card{background:var(--card);border-radius:16px;padding:16px 20px;margin:16px 0}
-</style>
-</head>
-<body><main>
-<nav><a href="./">ばくまくら サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
-<h1>ばくまくら サポート</h1>
-<p>もやもやは、むにゃがたべる。子どもの獏「むにゃ」と、寝る前5分のおやすみ準備と朝30秒の睡眠日誌で、自分の眠りのリズムをつくる睡眠習慣アプリです。</p>
-
-<div class="card">
-<h2 style="margin-top:0;border:0">よくある質問</h2>
-<p><b>Q. 記録はどこに保存されますか？</b><br>A. お使いの端末の中だけです。アカウント登録やサーバーへの送信はありません。機種変更の前に「設定」＞「日誌をテキストで書き出す」で記録を残せます。</p>
-<p><b>Q. お知らせが届きません。</b><br>A. 端末の設定で、ばくまくらの通知が許可されているか確認し、アプリの「設定」でお知らせをオンにしてください。</p>
-<p><b>Q. 「ねどこ時間のめやす」が表示されません。</b><br>A. 直近7日に5晩以上の日誌が必要です。また、はじめの確認であてはまる項目がある場合は安全のため表示しません。</p>
-<p><b>Q. ばくまくら プラスを解約したい。</b><br>A. iPhoneは「設定」アプリ＞Apple ID＞サブスクリプション、AndroidはGoogle Play ストア＞お支払いと定期購入＞定期購入から解約できます。</p>
-<p><b>Q. 機種変更でプラスを引き継ぎたい。</b><br>A. 同じApple ID／Googleアカウントでログインし、「ばくまくら プラス」画面の「購入を復元」を押してください。</p>
+:root{--night:#0f1130;--deep:#171a3d;--card:#21255080;--ink:#f6eedb;--sub:#bdb7dc;--amber:#f2b45a;--line:#3a3f74}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--ink);font-family:"Hiragino Maru Gothic ProN","Zen Maru Gothic","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.9;font-size:16px}
+a{color:var(--amber)}
+.hero{position:relative;min-height:340px;background:url(img/garden.jpg) center bottom/cover;display:flex;align-items:flex-end;justify-content:center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,48,.15),rgba(15,17,48,.95))}
+.hero .in{position:relative;z-index:1;text-align:center;padding:0 16px 28px;max-width:640px}
+.hero img.m{width:150px;display:block;margin:0 auto -6px}
+.hero h1{margin:6px 0 2px;font-size:2rem;letter-spacing:.08em}
+.hero p{margin:0;color:var(--sub)}
+.wrap{max-width:680px;margin:0 auto;padding:8px 16px 56px}
+.tabs{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:18px 0 8px}
+.tabs a{padding:6px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-size:.9rem}
+.tabs a.on{background:var(--amber);color:#2b1d06;border-color:var(--amber)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+.step{background:var(--deep);border-radius:18px;padding:12px;text-align:center}
+.step img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.step b{display:block;color:var(--amber);font-size:.8rem;letter-spacing:.1em}
+.step span{font-size:.92rem}
+@media (max-width:560px){.steps{grid-template-columns:1fr}.step{display:grid;grid-template-columns:96px 1fr;gap:12px;text-align:left;align-items:center}}
+details{background:var(--deep);border-radius:14px;padding:12px 16px;margin:10px 0}
+summary{cursor:pointer;font-weight:bold}
+.note{border-left:3px solid var(--amber);padding:6px 14px;color:var(--sub);margin:24px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--amber);font-weight:bold;width:32%}
+h2{font-size:1.15rem;margin:34px 0 6px;color:var(--amber)}
+footer{text-align:center;color:var(--sub);font-size:.85rem;margin-top:40px}
+</style></head>
+<body>
+<header class="hero"><div class="in"><img class="m" src="img/munya-happy.png" alt="子どもの獏のむにゃ"><h1>ばくまくら</h1><p>もやもやは、獏のむにゃが食べる。</p></div></header>
+<div class="wrap">
+<nav class="tabs"><a href="./" class="on">サポート</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用規約</a></nav>
+<p>寝る前についスマホを見つづけてしまう夜に。子どもの獏「むにゃ」と、寝る前5分のおやすみ準備と朝30秒の睡眠日誌で、自分の眠りのリズムをつくるアプリです。</p>
+<div class="steps">
+ <div class="step"><img src="img/munya-eat.png" alt="もやもやを食べるむにゃ" style="object-fit:contain;background:#1b1e44"><div><b>夜</b><span>書いたもやもやを、むにゃが食べる（文章は保存されません）</span></div></div>
+ <div class="step"><img src="img/d01.jpg" alt="夢カード 雲のくじら"><div><b>朝</b><span>日誌をつけると、ゆうべのもやもやが夢カードになって届く</span></div></div>
+ <div class="step"><img src="img/d10.jpg" alt="夢カード 夜光きのこの街"><div><b>つづける</b><span>夢のしずくで、夜の庭が満月の庭まで育つ</span></div></div>
 </div>
 
-<p>ばくまくらは医療機器ではありません。いびきや呼吸の停止を指摘される、日中に強い眠気がある、眠れない日が続いてつらいときは、かかりつけ医や睡眠の相談ができる医療機関に相談してください。</p>
+<h2>こまったときは</h2>
+<details><summary>記録はどこに保存されますか？</summary><p>お使いの端末の中だけです。アカウントやサーバーはありません。機種変更の前に、アプリの「設定 ＞ 日誌をテキストで書き出す」で記録を残せます。</p></details>
+<details><summary>お知らせが届きません</summary><p>端末の設定でばくまくらの通知が許可されているか確認し、アプリの「設定」でおやすみ準備のお知らせをオンにしてください。</p></details>
+<details><summary>むにゃの声やBGMが鳴りません</summary><p>初めは音がオフになっています。「設定 ＞ 音」でオンにしてください。消音モードのときは鳴りません。</p></details>
+<details><summary>「ねどこ時間のめやす」が出ません</summary><p>直近7日に5晩以上の日誌が必要です。はじめの確認であてはまる項目がある場合は、安全のため表示しません（設定からやり直せます）。</p></details>
+<details><summary>夢カードはいくつありますか？</summary><p>日誌をつけた朝に1枚ずつ届き、全部で12枚です。</p></details>
 
-<h2>お問い合わせ</h2>
-<p>BORDERLESS WORLD LLC<br>メール：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p>
-</main></body></html>
+<p class="note">ばくまくらは医療機器ではありません。大きないびきや呼吸の停止を指摘される、日中に強い眠気がある、眠れない日が続いてつらいときは、かかりつけ医や睡眠の相談ができる医療機関に相談してください。</p>
+<p>お問い合わせ：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a>（BORDERLESS WORLD LLC）</p>
+<footer><img src="img/munya-sleep.png" alt="" width="90"><br>BORDERLESS WORLD LLC ・ <a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></footer>
+</div></body></html>
