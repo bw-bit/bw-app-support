@@ -1,19 +1,47 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>ほろたぬ サポート</title><style>body{font-family:system-ui,-apple-system,"Hiragino Sans",sans-serif;max-width:720px;margin:2rem auto;padding:0 16px;line-height:1.8;color:#3E2A1E;background:#FBF6EC}h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem}a{color:#C8432A}.box{background:#FFFCF5;border:1px solid #E8DCC6;border-radius:12px;padding:12px 16px}</style></head><body>
-<h1>ほろたぬ - 減酒と休肝日の記録</h1>
-<p>豆だぬきの「まめた」といっしょに、飲んだお酒の純アルコール量を記録し、飲み会の前に作戦を立て、翌朝ふりかえる減酒サポートアプリです。20歳以上の方が対象です。</p>
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ほろたぬ サポート</title><meta name="color-scheme" content="dark"><style>:root{--bg:#17151B;--card:#221F28;--line:#3A3542;--ink:#F1E7D3;--sub:#BEB09B;--shu:#E77A60;--andon:#F3E4C4;--andon-ink:#3E2A1E}
+*{box-sizing:border-box}html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;line-height:1.85;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:28px 16px 64px;display:grid;gap:24px}
+@media(min-width:720px){.wrap{grid-template-columns:88px 1fr;gap:36px;padding-top:56px}.title{writing-mode:vertical-rl;position:sticky;top:40px;align-self:start;height:auto}}
+.title{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-weight:600;letter-spacing:.18em;font-size:1.7rem;color:var(--andon);margin:0;border-left:3px solid var(--shu);padding:0 0 0 12px}
+@media(min-width:720px){.title{border-left:0;border-right:3px solid var(--shu);padding:0 12px 0 0}}
+h2{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;font-size:1.2rem;color:var(--andon);margin:2.2rem 0 .4rem;letter-spacing:.06em}
+h2:first-child{margin-top:0}
+p,li{color:var(--ink)}small,.sub{color:var(--sub)}
+a{color:var(--shu);text-underline-offset:3px}
+.andon{background:var(--andon);color:var(--andon-ink);border-radius:18px;padding:16px 20px}
+.andon p,.andon li,.andon strong{color:var(--andon-ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:10px 0}
+ol.steps{padding-left:1.4em}ol.steps li{margin:.3em 0}
+dt{font-weight:700;margin-top:1em;color:var(--andon)}dd{margin:.2em 0 0 0}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:2.4rem;font-size:.95rem}
+</style></head>
+<body><div class="wrap"><h1 class="title">ほろたぬ</h1><main>
+
+<div class="andon"><p><strong>飲み会の前に作戦を立て、翌朝に答え合わせする。</strong><br>ほろたぬは、付き合いの飲み会が多い人のための「飲み方の作戦帳」です。20歳以上の方が対象です。</p></div>
+<h2>使い方</h2>
+<ol class="steps">
+<li><strong>宴の作戦</strong>：何杯まで・何時に帰る・どの作戦でいくか（一杯ごとに水、最初の一杯のあとはノンアル、先に食べる、ことわり文句）を決めます。</li>
+<li><strong>宴の最中</strong>：飲むたびに「＋水・お茶」か「＋お酒」を1回押します。決めた上限といまの杯数、帰る時刻まであと何分かが出ます。押し間違いは「直前を取り消す」で戻せます。</li>
+<li><strong>翌朝の答え合わせ</strong>：作戦の項目ごとに○×がつきます。「次はこうする」を1つ選ぶと、次の作戦に最初から入ります。</li>
+<li><strong>作戦の効き目</strong>：答え合わせが3回たまると、作戦をした宴としなかった宴で、作戦どおりに終われた回数を見比べられます（それぞれ5回たまると割合も出ます）。</li>
+</ol>
 <h2>よくある質問</h2>
-<p><b>Q. 記録はどこに保存されますか？</b><br>A. お使いの端末の中だけです。アカウントやサーバーはありません。機種変更の前に「せってい ＞ 記録をCSVで書き出す」で保存してください。</p>
-<p><b>Q. 純アルコール量はどう計算していますか？</b><br>A. 量(ml) × 度数(%) ÷ 100 × 0.8 で計算しています（厚生労働省「健康に配慮した飲酒に関するガイドライン」で紹介されている計算方法）。</p>
-<p><b>Q. 0時を過ぎた分はどの日になりますか？</b><br>A. 朝5時までに飲んだ分は、前の日の記録になります。</p>
-<p><b>Q. ほろたぬ＋を解約したい／復元したい</b><br>A. 解約は iPhone の「設定 ＞ Apple ID ＞ サブスクリプション」、Android の「Google Play ＞ お支払いと定期購入 ＞ 定期購入」から行えます。機種変更などで復元するときは、アプリの「せってい ＞ 購入を復元する」を押してください。</p>
+<dl>
+<dt>記録はどこに保存されますか？</dt><dd>お使いの端末の中だけです。アカウントやサーバーはありません。機種変更の前に「せってい ＞ 記録をCSVで書き出す」で保存してください。</dd>
+<dt>通知は何が届きますか？</dt><dd>作戦を立てた宴ごとに、帰る時刻と翌朝8時（答え合わせ）の2回です。端末の中で作る通知で、「せってい」から止められます。</dd>
+<dt>宴の最中に押しわすれました</dt><dd>翌朝の答え合わせで、お酒の杯数・水の回数・帰った時刻を直せます。</dd>
+<dt>純アルコール量はどう計算していますか？</dt><dd>量(ml) × 度数(%) ÷ 100 × 0.8 です（厚生労働省「健康に配慮した飲酒に関するガイドライン」で紹介されている計算方法）。0時から朝5時までの分は前の日の宴に入ります。</dd>
+<dt>お金はかかりますか？</dt><dd>無料です。広告やアプリ内課金はありません。</dd>
+</dl>
 <h2>困ったときは</h2>
-<p>お酒を減らしたときの体調不良や、自分では量を減らせないときは、医療機関や相談窓口に相談してください。</p>
-<ul>
-<li><a href="https://www.ncasa-japan.jp/you-do/treatment/treatment-map/">全国の相談窓口・医療機関を探す（依存症対策全国センター）</a></li>
-<li><a href="https://www.zmhwc.jp/centerlist.html">全国の精神保健福祉センター一覧</a></li>
-</ul>
-<h2>リンク</h2>
-<ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="terms.html">利用規約</a></li></ul>
+<div class="card"><p>お酒を減らしたときに体調が崩れる、自分では量を減らせないときは、医療機関や相談窓口に相談してください。ほろたぬは医療機器ではありません。</p>
+<p><a href="https://www.ncasa-japan.jp/you-do/treatment/treatment-map/">全国の相談窓口・医療機関を探す（依存症対策全国センター）</a><br><a href="https://www.zmhwc.jp/centerlist.html">全国の精神保健福祉センター一覧</a></p></div>
 <h2>お問い合わせ</h2>
-<div class="box"><p>BORDERLESS WORLD LLC<br>メール: <a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p></div>
-</body></html>
+<p>BORDERLESS WORLD LLC<br>メール：<a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></p>
+
+<nav><a href="./">ほろたぬのサポート</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="mailto:app@bwj.co.jp">app@bwj.co.jp</a></nav>
+<p class="sub"><small>© 2026 BORDERLESS WORLD LLC</small></p>
+</main></div></body></html>
